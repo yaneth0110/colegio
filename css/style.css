@@ -1,0 +1,116 @@
+/* Fondo de la página */
+body {
+    background-image: url('../img/fondo3.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Fuente para el texto */
+}
+
+/* Contenedor general */
+.container {
+    margin-top: 20px;
+    margin-bottom: 100px; /* Espacio adicional para separar del footer */
+}
+
+/* Contenedor para la tabla */
+.tablee-container {
+    background-color: #ffffff !important;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 100px; /* Espacio adicional para separar del footer */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-radius: 10px; /* Bordes redondeados para la tabla */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+}
+
+table thead {
+    background-color: #0056b3;
+    color: #ffffff;
+    text-align: center;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody tr:hover {
+    background-color: #d1ecf1; /* Fondo azul pastel al pasar el cursor */
+    cursor: pointer;
+}
+
+/* Menú de navegación */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa; /* Fondo blanco */
+    padding: 10px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    display: flex; /* Hace que los elementos de la lista estén en línea */
+    align-items: flex-end;
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+
+
+.navbar a {
+   
+    color: #000; /* Texto negro */
+    text-decoration: none;
+    margin: 0 10px; /* Espaciado horizontal entre enlaces */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.navbar a:hover {
+    background-color: #d1ecf1; /* Fondo azul pastel al pasar el cursor */
+    color: #000; /* Texto permanece negro */
+    border-radius: 5px;
+}
+
+.navbar a:active {
+    color: #0056b3; /* Azul oscuro para enlace activo */
+}
+
+/* Contenedor del formulario */
+form {
+    margin-bottom: 80px; /* Espacio extra entre el formulario y el footer */
+}
+
+/* Footer */
+.footer {
+    background-color: #0056b3; /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 10px 0; /* Espaciado interno arriba y abajo */
+    position: fixed; /* Fijado en la parte inferior */
+    bottom: 0; /* Posición en la parte inferior */
+    left: 0; /* Asegura que comience desde la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra superior */
+    font-size: 14px; /* Tamaño del texto */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
